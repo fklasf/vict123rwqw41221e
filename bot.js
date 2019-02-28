@@ -9,7 +9,7 @@ if (message.content.startsWith(prefix + 's')) {
                                        message.delete()
   if (message.author.id !== '399250242136047619') return;
 client.user.setGame(argresult, "http://twitch.tv/Victoria");
-    message.channel.sendMessage(`**\`${argresult}\` :تم تغيير الحالة الى**`).then(msg => {msg.delete()});
+    message.channel.sendMessage(`**\`${argresult}\` :تم تغيير الحالة الى**`).then(msg => {msg.delete(2)});
 
     
 } 
